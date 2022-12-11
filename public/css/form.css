@@ -1,0 +1,11 @@
+.form-control {
+    background-color: #FCF9F9;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    padding-left: 2rem;
+}
+
+.form-control::placeholder {
+    color: #989898;
+    font-family: 'Roboto Thin', sans-serif;
+}

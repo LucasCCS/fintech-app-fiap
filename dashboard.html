@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/dashboard.css">
     <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
     <title>FintechApp | Dashboard</title>
 </head>
@@ -14,51 +14,57 @@
         <div class="container">
             <div class="row">
 
-                <div class="d-flex align-items-center px-3">
-                    <div class="fintech-app-header-user-info d-flex align-items-center pt-2">
-                        <div class="fintech-app-header-user-info-user-avatar">
-                            <img class="rounded-circle" src="public/images/placeholder_avatar.png">
+                <div class="col">
+                    <div class="d-flex align-items-center px-3">
+                        <div class="fintech-app-header-user-info d-flex align-items-center pt-2">
+                            <div class="fintech-app-header-user-info-user-avatar">
+                                <img class="rounded-circle" src="public/images/placeholder_avatar.png">
+                            </div>
+                            <div class="fintech-app-header-user-info-user-name ms-2">
+                                <span>Bem-vindo(a)</span>
+                                <strong class="d-block">
+                                    Lucas!
+                                </strong>
+                            </div>
                         </div>
-                        <div class="fintech-app-header-user-info-user-name ms-2">
-                            <span>Bem-vindo(a)</span>
-                            <strong class="d-block">
-                                Lucas!
-                            </strong>
+                        <div class="fintech-app-header-notifications ms-auto">
+                            <img src="public/images/notification-icon.svg">
                         </div>
-                    </div>
-                    <div class="fintech-app-header-notifications ms-auto">
-                        <img src="public/images/notification-icon.svg">
                     </div>
                 </div>
 
             </div>
 
             <div class="row pb-2 pt-5">
-                <div class="d-flex justify-content-center">
-                    <div class="fintech-app-header-money-info text-center">
-                        <small class="d-block">
-                            Saldo disponível
-                        </small>
-                        <strong class="h1">
-                            <span class="h5 text-primary">R$ </span> 0, 00
-                        </strong>
-                        <a href="#" class="btn btn-primary d-block mt-3 px-5 rounded-pill">Minha carteira</a>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <div class="fintech-app-header-money-info text-center">
+                            <small class="d-block">
+                                Saldo disponível
+                            </small>
+                            <strong class="h1">
+                                <span class="h5 text-primary">R$ </span> 0, 00
+                            </strong>
+                            <a href="#" class="btn btn-primary d-block mt-3 px-5 rounded-pill">Minha carteira</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
 
             <div class="row mt-4 px-4">
-                <div class="fintech-app-header-money-footer d-flex justify-content-between">
-                    <div class="fintech-app-header-money-footer-revenues">
-                        <small class="d-block">Receitas</small>
-                        <strong>R$ 0,00</strong>
+               <div class="col">
+                    <div class="fintech-app-header-money-footer d-flex justify-content-between">
+                        <div class="fintech-app-header-money-footer-revenues">
+                            <small class="d-block">Receitas</small>
+                            <strong>R$ 0,00</strong>
+                        </div>
+                        <div class="fintech-app-header-money-footer-expenses">
+                            <small class="d-block">Despesas</small>
+                            <strong>R$ 0,00</strong>
+                        </div>
                     </div>
-                    <div class="fintech-app-header-money-footer-expenses">
-                        <small class="d-block">Despesas</small>
-                        <strong>R$ 0,00</strong>
-                    </div>
-                </div>
+               </div>
             </div>
 
         </div>
@@ -68,71 +74,73 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="fintech-app-last-transactions mt-5">
-                    <h4 class="small">Últimas transações</h4>
-                    <ul class="fintech-app-last-transactions-list list-unstyled">
-                        <li class="fintech-app-last-transactions-list-item mt-3">
-                            <div class="fintech-app-transaction-card border-0 card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center">
-                                        <div class="fintech-app-transaction-card-info-resume d-flex align-items-center">
-                                            <div class="fintech-app-transaction-card-info-resume-icon">
-                                                <img class="rounded-circle" src="public/images/placeholder_avatar.png">
+                <div class="col">
+                    <div class="fintech-app-last-transactions mt-5">
+                        <h4 class="small">Últimas transações</h4>
+                        <ul class="fintech-app-last-transactions-list list-unstyled">
+                            <li class="fintech-app-last-transactions-list-item mt-3">
+                                <div class="fintech-app-transaction-card border-0 card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <div class="fintech-app-transaction-card-info-resume d-flex align-items-center">
+                                                <div class="fintech-app-transaction-card-info-resume-icon">
+                                                    <img class="rounded-circle" src="public/images/placeholder_avatar.png">
+                                                </div>
+                                                <div class="fintech-app-transaction-card-info-resume-description ms-2">
+                                                    <strong>Titulo</strong>
+                                                    <small class="d-block text-muted">Descrição</small>
+                                                </div>
                                             </div>
-                                            <div class="fintech-app-transaction-card-info-resume-description ms-2">
-                                                <strong>Titulo</strong>
-                                                <small class="d-block text-muted">Descrição</small>
+                                            <div class="fintech-app-transaction-card-info-value ms-auto">
+                                                <strong class="text-primary">R$ 0,00</strong>
                                             </div>
-                                        </div>
-                                        <div class="fintech-app-transaction-card-info-value ms-auto">
-                                            <strong class="text-primary">R$ 0,00</strong>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="fintech-app-last-transactions-list-item mt-3">
-                            <div class="fintech-app-transaction-card border-0 card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center">
-                                        <div class="fintech-app-transaction-card-info-resume d-flex align-items-center">
-                                            <div class="fintech-app-transaction-card-info-resume-icon">
-                                                <img class="rounded-circle" src="public/images/placeholder_avatar.png">
+                            </li>
+                            <li class="fintech-app-last-transactions-list-item mt-3">
+                                <div class="fintech-app-transaction-card border-0 card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <div class="fintech-app-transaction-card-info-resume d-flex align-items-center">
+                                                <div class="fintech-app-transaction-card-info-resume-icon">
+                                                    <img class="rounded-circle" src="public/images/placeholder_avatar.png">
+                                                </div>
+                                                <div class="fintech-app-transaction-card-info-resume-description ms-2">
+                                                    <strong>Titulo</strong>
+                                                    <small class="d-block text-muted">Descrição</small>
+                                                </div>
                                             </div>
-                                            <div class="fintech-app-transaction-card-info-resume-description ms-2">
-                                                <strong>Titulo</strong>
-                                                <small class="d-block text-muted">Descrição</small>
+                                            <div class="fintech-app-transaction-card-info-value ms-auto">
+                                                <strong class="text-primary">R$ 0,00</strong>
                                             </div>
-                                        </div>
-                                        <div class="fintech-app-transaction-card-info-value ms-auto">
-                                            <strong class="text-primary">R$ 0,00</strong>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="fintech-app-last-transactions-list-item mt-3">
-                            <div class="fintech-app-transaction-card border-0 card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center">
-                                        <div class="fintech-app-transaction-card-info-resume d-flex align-items-center">
-                                            <div class="fintech-app-transaction-card-info-resume-icon">
-                                                <img class="rounded-circle" src="public/images/placeholder_avatar.png">
+                            </li>
+                            <li class="fintech-app-last-transactions-list-item mt-3">
+                                <div class="fintech-app-transaction-card border-0 card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <div class="fintech-app-transaction-card-info-resume d-flex align-items-center">
+                                                <div class="fintech-app-transaction-card-info-resume-icon">
+                                                    <img class="rounded-circle" src="public/images/placeholder_avatar.png">
+                                                </div>
+                                                <div class="fintech-app-transaction-card-info-resume-description ms-2">
+                                                    <strong>Titulo</strong>
+                                                    <small class="d-block text-muted">Descrição</small>
+                                                </div>
                                             </div>
-                                            <div class="fintech-app-transaction-card-info-resume-description ms-2">
-                                                <strong>Titulo</strong>
-                                                <small class="d-block text-muted">Descrição</small>
+                                            <div class="fintech-app-transaction-card-info-value ms-auto">
+                                                <strong class="text-primary">R$ 0,00</strong>
                                             </div>
-                                        </div>
-                                        <div class="fintech-app-transaction-card-info-value ms-auto">
-                                            <strong class="text-primary">R$ 0,00</strong>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-
-                    </ul>
+                            </li>
+    
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

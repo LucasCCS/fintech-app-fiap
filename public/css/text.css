@@ -1,0 +1,5 @@
+@import "theme.css";
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
