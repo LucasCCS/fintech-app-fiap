@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #BAFF29;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.fintech-app-header {
+    background: linear-gradient(359.88deg, #F1FFE7 0.1%, rgba(241, 255, 231, 0) 95.12%);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0px 3px 30px rgba(0,0,0,.1);
+}
+
+.fintech-app-header-user-info-user-avatar img {
+    width: 67px;
+}
+
+.fintech-app-header-user-info-user-name span {
+    font-family: 'Roboto Thin', sans-serif;
+}
+.fintech-app-header-user-info-user-name strong {
+    font-family: 'Roboto Medium', sans-serif;
+}
+
+.fintech-app-transaction-card {
+    box-shadow: 0px 3px 20px rgba(0,0,0,.1);
+    border-radius: 10px;;
+}
+
+.fintech-app-transaction-card-info-resume-icon img {
+    width: 55px;
+}
+
+.fintech-app-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 3px 20px rgba(0,0,0,.2);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.fintech-app-navbar-menu-list-item + .fintech-app-navbar-menu-list-item {
+    margin-left: 2rem;
+}
+
+.fintech-app-navbar-menu-center .btn {
+    margin-top: -50px;
+    width: 76px;
+    height: 76px;
+}
+
+.fintech-app-navbar-menu-center .btn svg path {
+    fill: #1A1B41;
+}
+
+.fintech-app-header-money-info .h1 {
+    font-family: 'Roboto Black', sans-serif;
+    font-size: 2.8125rem;
+}
+
+.fintech-app-header-money-info .h5 {
+    font-family: 'Roboto Black', sans-serif;
+    font-size: 2.125rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-family: 'Roboto Thin', sans-serif;
+    color: #1A1B41;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active,
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #1A1B41;
+}
+
+.btn-primary:focus-visible {
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    outline: 0;
+    color: #1A1B41;
+    box-shadow: 0 0 0 0.25rem rgba(213, 255, 126, .5);
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
