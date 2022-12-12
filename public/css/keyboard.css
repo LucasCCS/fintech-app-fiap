@@ -1,0 +1,27 @@
+.fintech-app-keyboard {
+    position: fixed;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(26, 27, 65, 0.5);
+    margin-bottom: -1000vh;
+    transition: all .5s ease-in;
+}
+
+
+.fintech-app-keyboard.open {
+    top: 0;
+    margin-bottom: 0;
+}
+
+.fintech-app-keyboard-body {
+    background: #1A1B41;
+    border-radius: 40px 40px 0px 0px;
+    min-height: 350px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
